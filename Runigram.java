@@ -80,9 +80,9 @@ public class Runigram {
 	
 	
 	
-	 // Returns an image which is the horizontally flipped version of the given image. 
+	 // Returns an image which is the horizontally flipped version of the given image.  
 	 
-	public static Color[][] flippedHorizontally(Color[][] image) {
+	public static Color[][] flippedVertically(Color[][] image) {
 		Color[][] result = new Color[image.length][image[0].length];
 		for ( int i = 0; i < image[0].length; i++) {
 			for ( int j = 0; j < image.length; j++) {
@@ -95,7 +95,7 @@ public class Runigram {
 	/**
 	 * Returns an image which is the vertically flipped version of the given image. 
 	 */
-	public static Color[][] flippedVertically(Color[][] image){
+	public static Color[][] flippedHorizontally(Color[][] image){
 		Color[][] result = new Color[image.length][image[0].length];
 		for ( int i = 0; i < image.length; i++) {
 			for ( int j = 0; j < image[i].length; j++) {
